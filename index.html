@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>First Web</title>
+    <link rel="stylesheet" href="fontawesome-free-5.10.1-web/css/all.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="vendors/css/grid.css">
+    <link rel="stylesheet" type="text/css" href="resources/css/styles.css">
+    <link rel="stylesheet" href="resources/css/queries.css">
+    <!-- Phải để link query ở dưới thì nó mới có hiệu ứng trong query dc vì nó phải tải hiệu ứng ơ stlye trước r mới tới query chứ nếu để ở trên thì sẽ ko chạy -->
+</head>
+
+<body>
+    <header id="home">
+        <nav>
+                <a href="#home"><img class="logo" src="./resources/img/logo.png" alt="logo"></a>
+                <ul class="main-nav">
+                    <!-- unordered list-->
+                    <li><a href="#testimonials">How client think</a></li>
+                    <!-- list item --><!--(a href="#testimonials") nghĩa là khi ta nhấn vào dòng chữ "How client think"
+                    thì nó sẽ đưa ta đến phần testimonials ở trên web -->
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <div class="dropdown">
+                        <button onclick="myFunction()" class="dropbtn">More</button>
+                        <div id="myDropdown" class="dropdown-content">
+                          <a href="login.html"  target="blank">Login</a>
+                          <a href="#about">About</a>
+                          <a href="#products">Products</a>
+                          <a href="#contact">Contact</a>
+                        </div>
+                      </div>                     
+                      <script>
+                      /* When the user clicks on the button, 
+                      toggle between hiding and showing the dropdown content */
+                      function myFunction() {
+                        document.getElementById("myDropdown").classList.toggle("show");
+                      }
+                      
+                      // Close the dropdown if the user clicks outside of it
+                      window.onclick = function(event) {
+                        if (!event.target.matches('.dropbtn')) {
+                          var dropdowns = document.getElementsByClassName("dropdown-content");
+                          var i;
+                          for (i = 0; i < dropdowns.length; i++) {
+                            var openDropdown = dropdowns[i];
+                            if (openDropdown.classList.contains('show')) {
+                              openDropdown.classList.remove('show');
+                            }
+                          }
+                        }
+                      }
+                      </script>
+                </ul>
+                <i class="fas fa-bars mobile-nav-icon"></i>
+        </nav>
+        <div class="clearfix"></div>
+        <div class="row">
+            <div class="heading-main-box">
+                <h1>We will study <br> English together. <br>
+                    So join with us
+                </h1>
+                <a href="#about" class="btn">Tell me more</a>
+                <a href="#products" class="btn">Join us</a>
+            </div>
+        </div>
+    </header>
+    <section class="about-section" id="about">
+        <div class="row">
+            <h2>About us</h2>
+            <p class="p-long">
+                We are people that are studying English by ourselves, we believe that you don't need to pay so much
+                money for being good at English, we're here to help you.
+            </p>
+        </div>
+        <div class="row">
+            <div class="col span-1-of-4 about-picture">
+                <!--  span-1-of-3  là câu lệnh dùng để chia diện tích mà nó chiếm. ở đây là 1 phần 3-->
+                <img src="./resources/img/activities1.jpeg" alt="activities1">
+                <p class="picture-title">
+                    Team working
+                </p>
+            </div>
+            <div class="col span-1-of-4 about-picture">
+                <!--  span-1-of-3  là câu lệnh dùng để chia diện tích mà nó chiếm. ở đây là 1 phần 3-->
+                <img src="./resources/img/activities2.jpeg" alt="activities2">
+                <p class="picture-title">
+                    Funny class
+                </p>
+            </div>
+            <div class="col span-1-of-4 about-picture">
+                <!--  span-1-of-3  là câu lệnh dùng để chia diện tích mà nó chiếm. ở đây là 1 phần 3-->
+                <img src="./resources/img/activities3.jpeg" alt="activities3">
+                <p class="picture-title">
+                    Be confident
+                </p>
+            </div>
+            <div class="col span-1-of-4 about-picture">
+                <!--  span-1-of-3  là câu lệnh dùng để chia diện tích mà nó chiếm. ở đây là 1 phần 3-->
+                <img src="./resources/img/activities4.jpeg" alt="activities4">
+                <p class="picture-title">
+                    All our friends
+                </p>
+            </div>
+
+        </div>
+    </section>
+    <section class="products-section" id="products">
+        <h2>Products</h2>
+        <div class="row">
+            <div class="col span-1-of-3">
+                <div class="product-box">
+                    <h3>Pronunciation class</h3>
+                    <p class="product-price">19$ <span>/month</span></p>
+                    <ul>
+                        <li><i class="fas fa-check small-icon"></i>Native voices</li>
+                        <li><i class="fas fa-check small-icon"></i>Master IPA</li>
+                    </ul>
+                    <a href="login.html" target="blank" class="btn">JOIN US</a>
+                </div>
+
+
+            </div>
+            <div class="col span-1-of-3">
+                <div class="product-box">
+                    <h3>Speaking class</h3>
+                    <p class="product-price">25$ <span>/month</span></p>
+                    <ul>
+                        <li><i class="fas fa-check small-icon"></i>Native speaking</li>
+                        <li><i class="fas fa-check small-icon"></i>Speaking naturally</li>
+                    </ul>
+                    <a href="login.html" target="blank" class="btn">JOIN US</a>
+                </div>
+            </div>
+            <div class="col span-1-of-3">
+                <div class="product-box">
+                    <h3>Listening class</h3>
+                    <p class="product-price">25$ <span>/month</span></p>
+                    <ul>
+                        <li><i class="fas fa-check small-icon"></i>Native speech</li>
+                        <li><i class="fas fa-check small-icon"></i>Hearing English clearly</li>
+                    </ul>
+                    <a href="login.html" target="blank" class="btn">JOIN US</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <section class="testimonials-section" id="testimonials">
+        <h2>Testimonials</h2>
+        <div class="row">
+            <div class="col span-1-of-3">
+                <blockquote>
+                    <!-- Trích câu nói của ai đó -->
+                    The course is very helpful, I can speak English fluency and I think The SF English became
+                    my second family, I love everyone very much. Thank you.
+
+                    <cite>
+                        <!-- Trích tên tác giả, ngày tháng nói câu đó -->
+                        <img src="resources/img/person5.jpeg" alt="person1"> Nguyen Chem Gio
+                    </cite>
+                </blockquote>
+            </div>
+            <div class="col span-1-of-3">
+                <blockquote>
+                    <!-- Trích câu nói của ai đó -->
+                    I believe that who came to This English centre would love this place as I did, when the course
+                    finished
+                    , I feel sad because studying in that place I always felt funny.
+                    <cite>
+                        <!-- Trích tên tác giả, ngày tháng nói câu đó -->
+                        <img src="resources/img/person2.jpeg" alt="person1"> Tran Vo Van
+                    </cite>
+                </blockquote>
+            </div>
+            <div class="col span-1-of-3">
+                <blockquote>
+                    <!-- Trích câu nói của ai đó -->
+                    Trust me, you can master English just by joining this class, I did, so I believe that you can too.
+                    Hope that
+                    one day, you can come and join in this class.
+                    <cite>
+                        <!-- Trích tên tác giả, ngày tháng nói câu đó -->
+                        <img src="resources/img/person4.jpeg" alt="person1"> Le Du Do
+                    </cite>
+                </blockquote>
+            </div>
+        </div>
+    </section>
+    <section class="sponsors-section" id="sponsors">
+        <h2>Sponsors</h2>
+        <div class="row">
+            <ul class="sponsors-showcase clearfix">
+                <li>
+                    <figure>
+                        <img class="logo-sponsor" src="resources/img/barcelona_logo.png" alt="barcelona">
+                        <figcaption>
+                            Barcelona
+                        </figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <img class="logo-sponsor" src="resources/img/mctcity_logo.png" alt="Manchester City">
+                        <figcaption>
+                            Manchester City
+                        </figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <img class="logo-sponsor" src="resources/img/tottenham_logo.png" alt="Totenham Hotspur">
+                        <figcaption>
+                            Totenham Hotspur
+                        </figcaption>
+                    </figure>
+                </li>
+            </ul>
+            <ul class="sponsors-showcase">
+                <li>
+                    <figure>
+                        <img class="logo-sponsor" src="resources/img/real_logo.png" alt="Real Marid">
+                        <figcaption>
+                            Real Marid
+                        </figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <img class="logo-sponsor" src="resources/img/juventus_logo.png" alt="Juventus">
+                        <figcaption>
+                            Juventus
+                        </figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <img class="logo-sponsor" src="resources/img/mctcity_logo.png" alt="Manchester United">
+                        <figcaption>
+                            Manchester United
+                        </figcaption>
+                    </figure>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="contact-section" id="contact">
+        <div class="row">
+            <div class="col span-1-of-3">
+                <ul class="information">
+                    <li><i class="fas fa-map-marker-alt small-icon"></i>Address: 21A, SefTaught street, Ha Noi</li>
+                    <li><i class="fas fa-envelope small-icon"></i>Email: seftaught@edu.vn</li>
+                    <li><i class="fas fa-phone small-icon"></i>SĐT: 112-113-114-115</li>
+                </ul>
+                <ul class="social-icons">
+                    <li><i class="fab fa-facebook-square"></i></li>
+                    <li><i class="fab fa-twitter-square"></i></li>
+                    <li><i class="fab fa-instagram"></i></li>
+                    <li><i class="fab fa-google-plus-square"></i></li>
+                </ul>
+
+            </div>
+            <div class="col span-2-of-3">
+                <form>
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label>Name</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="text" placeholder="Your Name">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label>Email</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="email" placeholder="Your Email">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label>Message</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <textarea placeholder="Your Message"></textarea>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <input type="submit" class="btn" value="Send It">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <footer>
+        Maked &copy; 2020 by Trọng Nghĩa
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.js" 
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous">
+    </script><!--link jquery-->
+    <script src="vendors/js/jquery.waypoints.min.js"></script><!--cài đặt jquery tải về từ bên ngoài-->
+    <script src="resources/js/scripts.js"></script> <!-- Những đoạn code js do mình viết -->
+</body>
+
+</html>

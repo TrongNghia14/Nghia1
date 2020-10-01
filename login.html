@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="bai11.css">
+    <title>From đăng nhập</title>
+</head>
+
+<body>
+    <div class="dangNhap">
+        <table class="baoNgoai">
+            <tr>
+                <td>
+                    <h1 style="font-weight: bold; color: rgb(255, 4, 0);">Sign In</h1>
+                    <form name="name">
+                        <table>
+                            <tr>
+                                <td style="text-align: right;">User</td>
+                                <td><input type="text" name="user" value="" size="20" maxlength="30" class="thongTin"
+                                        id="user"></td>
+                            </tr>
+                            <tr>
+                                <td>Passwword</td>
+                                <td><input type="password" name="password" value="" size="20" maxlength="30"
+                                        class="thongTin"></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2" align="center">
+                                    <p><input type="button" name="kt" value="Đăng nhập"
+                                            style="color: blue; border-radius: 10px;"
+                                            onClick="cauchao.innerText='Chào bạn ' + document.getElementById('user').value"></p>
+                                    <label id="cauchao" style="color:#FF0000"> </label>
+                                </td>
+                            </tr>
+                        </table>
+                    </form>
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+
+</html>

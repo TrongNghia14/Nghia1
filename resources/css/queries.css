@@ -1,0 +1,192 @@
+/* Big tablet to 1200px */ 
+@media only screen and (max-width:1200px){/* khi màn hình nhỏ hơn 1200px thì nó sẽ có các hiệu ứng trong query */
+    html{
+        font-size: 16px;/* ban đầu là 20px */
+    }
+    .heading-main-box{
+        transform: translate(-35%, -50%);
+    }
+    .product-box .btn{
+        margin-left: 10%;
+    }
+}
+
+/* Small tablet to big tablet from 768px - 1023px. Dành cho các loại ipad từ nhỏ tới lớn  */
+@media only screen and (max-width:1023px){
+    .logo{
+        width: 270px;
+        margin-left: 20px;
+
+    }
+    .main-nav{
+        margin-top: 30px;
+        margin-right: 15px;
+    }
+    .main-nav li{
+        margin-right: 10px;
+    }
+
+    .heading-main-box{
+        transform: translate(-25%, -50%);
+    }
+
+    .products-section .btn{ /* chỉnh 3 khung */
+        width: 80%;
+    }
+    .product-box{
+        width: 100%;
+        height: 300px;
+    }
+
+    h3{
+        font-size:80%;
+    }
+
+    .product-box ul li{
+        margin-left: 0;
+    }
+
+    .product-box .small-icon{
+        margin-right: 5px;
+    }
+
+    .social-icons li{
+        margin-left: 9px;
+    }
+
+    .infomation i{
+        display: block;
+    }
+    .infomation li{
+        font-size: 15px;
+    }
+
+}
+
+/* Small phone to small tablets. Dành cho các loại điện thoại với ipad nhỏ */
+@media only screen and (max-width: 767px){
+    .col{
+       width: 100%;
+    }
+
+    .main-nav{
+        display: none; /* Làm ẩn đi thanh tác vụ ( how client think, about, product, contact) */
+    }
+    .mobile-nav-icon{
+        display: block; /* khi đến khoảng này thì sẽ làm hiện lên cái icon này*/
+    }
+
+    .logo{
+        width: 350px;
+        margin-left: 5%;
+    }
+    h1{
+        word-spacing: 1px;
+        font-size: 250%;
+    }
+
+    .heading-main-box{
+        transform: translate(-17.5%, -50%);
+    }
+    .heading-main-box .btn{
+        width: 15%;
+        margin-left: 1%;
+    }
+
+    .about-picture{
+        text-align: center;
+    }
+    .about-section .row .p-long{
+        font-size: 20px;
+    }
+    .picture-title{
+        font-size: 30px;
+    }
+
+    .products-section .btn{
+        width: 70%;
+    }
+    .product-box{
+        width: 70%;
+        margin-left: 15%;
+    }
+    .product-box ul li{
+        margin-left: 20%;
+    }
+
+    .testimonials-section .row .col{
+        margin-bottom: 50px;
+    }
+
+    figcaption{/* các tên dưới hình */
+        visibility: hidden;
+    }
+    .logo-sponsor{
+        width: 120px;
+    }
+
+    .information{
+        margin-left: 30px;
+    }
+    .social-icons{
+        margin-top: 20px;
+        margin-bottom: 30px;
+        text-align: center;
+        
+    }
+    .social-icons li{
+        margin-left: 15px;
+        font-size: 45px;
+    }
+    form{
+        width: 90%;
+        margin-left: 10%;
+    }
+    label{
+        margin-left: 35%;
+    }
+
+}
+@media only screen and(max-width: 766px){
+    .mobile-nav-icon{
+
+    }
+}
+/* Small phone from 1 to 480px. Dành cho các phone nhỏ cho tới thiết bị có màn hình nhỏ hơn */
+@media only screen and (max-width: 480px){
+    html{
+        font-size: 12px;
+    }
+
+    .logo{
+        width: 300px;
+        margin-top: 10px;
+    }
+    .heading-main-box{
+        font-size: 10px;
+        transform: translate(-10%, -50%);
+    }
+    .heading-main-box .btn{
+        display: block;
+        margin-bottom: 15px;
+        margin-left: 3%;
+    }
+
+    .logo-sponsor{
+        width: 100px;
+    }
+
+    .information li{
+        font-size: 120%;
+    }
+
+    .mobile-nav-icon{
+        top: 100px;
+    }
+
+    .sticky .logo{
+        width: 200px;
+        margin-top: -30px;
+    }
+
+}
